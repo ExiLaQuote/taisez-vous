@@ -1,0 +1,117 @@
+// HTML SUPREME
+
+*, *::before, *::after {
+  overflow-x: hidden !important;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "MilitechFill";
+  letter-spacing: 0.1vw;
+}
+
+*::-moz-selection {background: #fbe78c;}
+*::selection {background: #fbe78c;}
+*::-webkit-scrollbar {display: none;}
+
+html {scroll-behavior: smooth !important;}
+img, video {display: block;}
+
+// GLOBAL DESIGNS
+
+@font-face {font-family: "Lato"; src: url("TV_Fonts/Lato.ttf");}
+@font-face {font-family: "Poppins"; src: url("TV_Fonts/Poppins.ttf");}
+@font-face {font-family: "Geograph"; src: url("TV_Fonts/Geograph.ttf");}
+@font-face {font-family: "PublicSans"; src: url("TV_Fonts/PublicSans.ttf");}
+@font-face {font-family: "Cera"; src: url("TV_Fonts/CeraRoundPro.ttf");}
+@font-face {font-family: "Entanglement"; src: url("TV_Fonts/Entanglement.ttf");}
+@font-face {font-family: "MilitechStroke"; src: url("TV_Fonts/MilitechStroke.ttf");}
+@font-face {font-family: "MilitechFill"; src: url("TV_Fonts/MilitechFill.ttf");}
+@font-face {font-family: "UAVOSD"; src: url("TV_Fonts/UAVOSD.ttf");}
+@font-face {font-family: "DelightCoffee"; src: url("TV_Fonts/DelightCoffee.ttf");}
+@font-face {font-family: "Raleway"; src: url("TV_Fonts/Raleway.ttf");}
+@font-face {font-family: "Gaegu"; src: url("TV_Fonts/Gaegu.ttf");}
+@font-face {font-family: "Kalam"; src: url("TV_Fonts/Kalam.ttf");}
+@font-face {font-family: "Quicksand"; src: url("TV_Fonts/Quicksand.ttf");}
+@font-face {font-family: "AutourOne"; src: url("TV_Fonts/AutourOne.ttf");}
+@font-face {font-family: "EvilDead"; src: url("TV_Fonts/EvilDead.ttf");}
+@font-face {font-family: "OCRA"; src: url("TV_Fonts/OCRA.ttf");}
+
+$white: #ffffff;
+$black: #252525;
+$gray: #4f4f4f;
+$beige: #D6B575;
+$yellow: #e0dc5e;
+$green: #8ad978;
+$teal: #008b8b;
+$red: #db626e;
+$maroon: #c62026;
+$lavender: #CBB6BA;
+$cream: #E6D3C5;
+$offPink: #BE9A9E;
+
+$bwD: #36220B; $bwM: #5E3E17; $bwL: #986931;
+$buD: #1B1A5E; $buM: #013C7E; $buL: #85B2D1; 
+
+// MAIN
+
+body {
+  background-color: #191919;
+  justify-content: space-around;
+}
+
+section, #LAUNCH, .flash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// SEC 1 - LAUNCH
+// refactor position/width/height when sec finished
+// use % as much as possible
+
+#LAUNCH {
+  background-color: $black;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  transition: opacity 2000ms ease;
+
+  button {
+    background-color: $black;
+    border-radius: 100%;
+    border: 2vh solid $gray;
+    width: 13vh;
+    height: 13vh;
+    transition: 300ms ease-out;
+    font-size: 7vh;
+    color: $black;
+    font-family: "Gaegu";
+  }
+
+  button:hover {color: $white; border: 2vh solid $white; cursor: pointer;}
+ 
+  .flash {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;    
+    display: none;
+  }
+
+  .flash:nth-of-type(1) {background-color: $beige;}
+  .flash:nth-of-type(2) {background-color: $red;}
+  .flash:nth-of-type(3) {background-color: $lavender;}
+  .flash:nth-of-type(4) {background-color: $buL;}
+  .flash:nth-of-type(5) {background-color: $white;}
+
+  #titlescreen p {
+    font-family: "EvilDead";
+    font-size: 0vh;
+    color: $black;
+    text-align: center;
+    transition: font-size 800ms ease-in;
+  }
+}
+
