@@ -1,2 +1,2 @@
 # taisez-vous
-A web-based ARG that involves intuitive cryptography, interpretive lore, and mere persistence..
+A web-based ARG of interpretive lore, intuitive decrypting, and dedicated to our relentless thoughts..
